@@ -1,0 +1,937 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?3hjek3');
+  src:  url('fonts/icomoon.eot?3hjek3#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?3hjek3') format('truetype'),
+    url('fonts/icomoon.woff?3hjek3') format('woff'),
+    url('fonts/icomoon.svg?3hjek3#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-right:before {
+  content: "\e902";
+}
+.icon-home:before {
+  content: "\e901";
+}
+.icon-cart:before {
+  content: "\e93a";
+}
+.icon-user:before {
+  content: "\e971";
+}
+.icon-search:before {
+  content: "\e986";
+}
+.icon-truck:before {
+  content: "\e9b0";
+}
+.icon-heart:before {
+  content: "\e9da";
+}
+
+body,html,*{
+  padding: 0;
+  margin: 0;
+  /*font-family:  "Times New Roman", "宋体", Times, serif;*/
+}
+body{
+  background: #f7f7f7;
+}
+    li{
+      list-style: none;
+    }
+    a{
+      text-decoration: none;
+    }
+    .clearfix:after{
+      content:'';
+      clear:both;
+      display: block;
+      height:0;
+      overflow: hidden;
+      visibility: hidden;
+    }
+    .f-r{
+        float: right;
+    }
+    .f-l{
+        float: left;
+    }
+
+
+          html,body{
+            width: 100%;
+            height: 100%;
+          }
+          .container{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+          }
+          .cover{
+            width: 100%;
+            height: 100%;
+          }
+          .h-v{
+            display: flex;
+            flex-direction: row;
+          }
+          .v-v{
+            display: flex;
+            flex-direction: column;
+          }
+          .h-list .item1{
+            width: 3.828rem;
+            height: 2.916rem;
+          }
+          .h-list .item2,.h-list .item3{
+            width: 2.041rem;
+            height: 2.916rem;
+          }
+          .h-list .item4{
+            width: 2.047rem;
+            height: 2.916rem;
+          }
+          .h-list-2 .item1{
+              width: 4.984rem;
+              height: 2.922rem;
+            }
+            .h-list-2 .item2{
+              width: 5rem;
+              height: 2.922rem;
+            }
+            .h-list-4 .item1,.h-list-4 .item2,.h-list-4 .item3{
+              width: 2.484rem;
+              height: 2.938rem;
+            }
+            .h-list-4 .item4{
+              width: 2.5rem;
+              height: 2.938rem;
+            }
+
+            .h-list-3 .item1{
+              width: 3.125rem;
+              height: 3.188rem;
+            }
+            .h-list-3 .item2,.h-list-3 .item3{
+              width: 1.563rem;
+              height: 1.563rem;
+            }
+            .h-list-3 .item3{
+              margin-top: 0.063rem;
+            }
+            .h-list-3 .item-23{
+              margin-left: 0.063rem;
+            }
+            @keyframes translate{
+              0%,20%{
+                transform: translateY(0);
+              }
+              20%,40%{
+                transform: translateY(-100%);
+              }
+              40%,80%{
+                transform: translateY(-200%);
+              }
+              80%,100%{
+                transform: translateY(-300%);
+              }
+            }
+        header{
+          top: 0;
+          left: 0;
+          width: 100%;
+          height:0.987rem; 
+          background: #ff4400 url(../taobao/15.png)  no-repeat;
+          background-size: 27px 20px;
+          background-position: 4.5px center;
+          padding-top: 6px;
+          padding-bottom: 6px;
+          padding-left: 0.987rem;
+          padding-right: 0.2rem;
+                box-sizing: border-box;
+        }
+        [data-dpr="2"] header{
+          background-size: 54px 40px;
+          background-position: 9px center;
+          padding-top: 12px;
+          padding-bottom: 12px;
+        }
+        header .search{
+          width: 100%;
+          height: 100%;
+          background: #b52600;
+          border-radius: 4px;
+          text-align: center;
+          color: #fff;
+          font-size: 0.35rem;
+        }
+        [data-dpr="2"] header .search{
+          border-radius: 8px;
+        }
+        header .search span{
+                position: relative;
+          height: 0.67rem;
+          line-height: 0.67rem;
+        }
+            .icon_search{
+                display: inline-block;
+                width: 20px;
+                padding-right: 6px;
+            }
+            /*.icon_search:before, .icon_search:after{
+                position: absolute;
+                content:'';
+            }*/
+           /*.icon_search:before{
+                width:18px;
+                height: 18px;
+                border:1px solid #fff;
+                border-radius: 50%;
+            }
+            .icon_search:after{
+                width:6px;
+                height: 2px;
+                background-color: #fff;
+                transform: rotate(45deg);
+            }*/
+
+        li{
+          height: 2rem;
+        }
+        #Wrapper{
+          flex:1;
+          width: 100%;
+          position: relative;
+          overflow: hidden;
+                scroll-behavior: none;
+        }
+
+        .banner{
+          width: 100%;
+          height: 3.125rem;
+        }
+        .icons{
+          height: 4.594rem;
+                margin-left:0.359rem;
+                margin-right:0.359rem;
+        }
+        .icons ul{
+          height: 2.125rem;
+          width: 100%;
+          font-size: 0;
+          display: flex;
+        }
+        .icons ul li{
+          flex: 1;
+          text-align: center;
+          height: 100%;
+          padding-top: 0.313rem;
+        }
+        .icons ul li a{
+          display: block;
+          cursor: none;
+        }
+        .icons ul li span{
+          display: block;
+          width: 1.625rem;
+          height: 1.141rem;
+          margin: 0 auto;
+          
+        }
+        .icons ul li:nth-child(1) span{
+          background: url(../taobao/2.png) no-repeat;
+          background-size: 100%;
+        }
+        .icons ul li:nth-child(2) span{
+          background: url(../taobao/topIcon2.png) no-repeat;
+          background-size: 100%;
+        }
+        .icons ul li:nth-child(3) span{
+          background: url(../taobao/topIcon3.png) no-repeat;
+          background-size: 100%;
+        }
+        .icons ul li:nth-child(4) span{
+          background: url(../taobao/topIcon4.png) no-repeat;
+          background-size: 100%;
+        }
+        .icons ul li:nth-child(5) span{
+          background: url(../taobao/topIcon5.png) no-repeat;
+          background-size: 100%;
+        }
+        .icons ul:nth-child(2) li:nth-child(1) span{
+          background: url(../taobao/topIcon6.png) no-repeat;
+          background-size: 100%;
+        }
+        .icons ul:nth-child(2) li:nth-child(2) span{
+          background: url(../taobao/topIcon7.png) no-repeat;
+          background-size: 100%;
+        }
+        .icons ul:nth-child(2) li:nth-child(3) span{
+          background: url(../taobao/topIcon8.png) no-repeat;
+          background-size: 100%;
+        }
+        .icons ul:nth-child(2) li:nth-child(4) span{
+          background: url(../taobao/topIcon9.png) no-repeat;
+          background-size: 100%;
+        }
+        .icons ul:nth-child(2) li:nth-child(5) span{
+          background: url(../taobao/topIcon10.png) no-repeat;
+          background-size: 100%;
+        }
+        .icons ul li p{
+          color: rgb(102,102,102);
+          height: 0.688rem;
+          line-height: 0.618rem;
+          font-size: 24px;
+        }
+
+        .infoList{
+          line-height: 0;
+          width: 10rem;
+          height: 0.953rem;
+          background-color: rgb(255, 255, 255);
+          overflow: hidden;
+        }
+        .infoList ul{
+          height: 0.95275rem;
+        }
+        .infoList ul li{
+          box-sizing: content-box;
+          display: flex;
+          width: 10rem;
+          padding: 0.09375rem 0px;
+          height: 0.75rem;
+        }
+        .infoList ul li .titleIcon{
+              display: block;
+              border-right: 1px solid rgb(232, 232, 232);
+              width: 2.1875rem;
+              height: 100%;
+              box-sizing: border-box;
+              background: url(../taobao/topTitle.png) center center / 1.61719rem 0.46875rem no-repeat;
+        }
+        .infoList ul li .tig{
+            display: block;
+              margin: 0.125rem 0.15625rem 0.125rem 0.28125rem;
+              padding: 0px 0.0625rem;
+              height: 0.46875rem;
+              line-height: 0.46875rem;
+              border: 1px solid rgb(216, 20, 33);
+              border-radius: 0.125rem;
+              color: rgb(216, 20, 33);
+              font-size: 28.125px;
+              text-align: center;
+              overflow: hidden;
+              max-width: 2rem;
+        }
+        .infoList ul li .titletext{
+              display: block;
+              overflow: hidden;
+              margin: 0.125rem 0px;
+              height: 0.5rem;
+              line-height: 0.5rem;
+              color: rgb(53, 53, 53);
+              font-size: 30.4688px;
+              width: 6rem;
+              flex: 1 1 0%;
+        }
+        .border-1px {
+          width: 100%;
+          height: 1px;
+          background: rgb(232,232,232);
+        }
+        .border-v-1px {
+          width: 1px;
+          height: 100%;
+          background: rgb(232,232,232);
+        }
+        .border-12px{
+          width: 100%;
+          height: 0.156rem;
+          background: rgb(232,232,232);
+        }
+            .border-v-12px{
+              background-color: rgb(255, 155, 67);
+              width: 0.156rem;
+              height: 100%;
+            }
+        .rushbuy5{
+          line-height: 0;
+          width: 10rem;
+          height: 5.047rem;
+          background-color: rgb(255, 255, 255);
+          position: relative;
+        }
+        .rushbuy5 .left{
+            width: 3.828rem;
+            height: 5.047rem;
+            background-color: rgb(255, 255, 255);
+            position: relative;     
+        }
+        .rushbuy5 .left .left-content{
+          width: 3.7rem;
+          height: 5.047rem;
+          z-index: 1;
+          position: absolute;
+          background-repeat: no-repeat;
+          background: url(../taobao/5.jpg);
+          background-size: contain;
+        }
+            .rushbuy5 .left .count-down{
+                position: absolute;
+                top:1.4rem;
+                left: 0;
+                width: 100%;
+                z-index: 2;
+                height: 0.6rem;
+                font-size: 0;
+                margin-left: 0.175rem;
+                box-sizing: border-box;
+            }
+            .rushbuy5 .left .count-down span{
+                font-size: 0.3125rem;
+                vertical-align: middle;
+            }
+            .rushbuy5 .left .count-down .hour,
+            .rushbuy5 .left .count-down .min,
+            .rushbuy5 .left .count-down .sec{
+                display: inline-block;
+                width:0.533rem;
+                height: 0.533rem;
+                line-height: 0.533rem;
+                background: #333;
+                margin-right: 5px;
+                color: #eee;
+                font-size: 0.3125rem;
+                text-align: center;
+                border-radius: 3px;
+            }
+            .rushbuy5 .left .count-down .dot{
+                width: 0.125rem;
+                margin-right: 5px;
+            }
+
+            
+        .rushbuy5 .right{
+          width: 6.188rem;
+          height: 5.047rem;
+        }
+
+        .rushbuy5 .right .top{
+          width: 6.188rem;
+          height: 2.313rem;
+          background-color: rgb(255, 255, 255);
+          position: relative;
+        }
+        .rushbuy5 .right .bottom{
+          width: 6.188rem;
+          height: 2.719rem;
+        }
+            .rushbuy5 .right .top .t-left{
+                width: 2.953rem;
+                height: 2.313rem;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                background: url(../taobao/17.jpg);
+                background-size: contain; 
+            }
+            .rushbuy5 .right .bottom .b-left{
+              width: 3.047rem;
+              height: 2.719rem;
+              z-index: 1;
+                background-repeat: no-repeat;
+              background: url(../taobao/6.jpg);
+                background-size: contain;
+            }
+            .rushbuy5 .right .top .t-right{
+              width: 3.234rem;
+              height: 2.313rem;
+              background-position: 50% 50%;
+              background-repeat: no-repeat;
+              background: url(../taobao/18.png);
+              background-size: contain;
+            }
+            .rushbuy5 .right .bottom .b-right{
+              width: 3.094rem;
+              height: 2.719rem;
+              z-index: 1;
+              background-repeat: no-repeat;
+              background: url(../taobao/19.png);
+              background-size: contain;
+            }
+
+
+            .cheap8{
+              line-height: 0;
+              width: 10rem;
+              height: 6.734rem;
+              background: #fff;
+              position: relative;
+            }
+            .title{
+              width: 10rem;
+              height: 0.844rem;
+            }
+            .title .icon{
+              margin-top: 0.219rem;
+              margin-left: 4.094rem;
+              width: 0.422rem;
+              height: 0.422rem;
+              background-position: 50% 50%;
+              background-repeat: no-repeat;
+              background: url(../taobao/icon1.png) no-repeat;
+              background-size: contain;
+            }
+            .title .text{
+              line-height: 0.844rem;
+              font-size: 28px;
+              color: rgb(255, 53, 14);
+              background-color: transparent;
+              margin-left: 0.141rem;
+              width: 1.9rem;
+              height: 0.844rem;
+            }
+            .cheap8 .top1,.cheap8 .top2 {
+              width: 10rem;
+              height: 2.916rem;
+            }
+            
+            .cheap8 .top1 .item1{
+              background: url(../taobao/2.jpg) no-repeat;
+              background-size: contain;
+            }
+            .cheap8 .top1 .item2,.cheap8 .top1 .item3,.cheap8 .top1 .item4{
+              background: url(../taobao/3.png) no-repeat;
+              background-size: contain;
+            }
+            .cheap8 .top2 .item1{
+              background: url(../taobao/1.png) no-repeat;
+              background-size: contain;
+            }
+            .cheap8 .top2 .item2,.cheap8 .top2 .item3,.cheap8 .top2 .item4{
+              background: url(../taobao/cheap6.jpg) no-repeat;
+              background-size: contain;
+            }
+
+            .tmall6{
+              width: 10rem;
+              height: 6.766rem;
+              background: #fff;
+            }
+            .tmall6 .title .icon{
+              margin-left: 3.906rem;
+              background: url(../taobao/mallIcon.png) no-repeat;
+              background-size: contain;
+            }
+            .tmall6 .title .text{
+              font-size: 28px;
+              color: rgb(209, 9, 9);
+              width: 1.953rem;
+            }
+            .tmall6 .top1{
+              height: 2.922rem;
+            }
+            .tmall6 .top2{
+              height: 2.938rem;
+            }
+            .tmall6 .top1 .item1{
+              background: url(../taobao/tmall1.png) no-repeat;
+              background-size: contain;
+            }
+            .tmall6 .top1 .item2{
+              background: url(../taobao/tmall2.png) no-repeat;
+              background-size: contain;
+            }
+            .tmall6 .top2 .item1{
+              background: url(../taobao/tmall3.png) no-repeat;
+              background-size: contain;
+            }
+            .tmall6 .top2 .item2{
+              background: url(../taobao/tmall4.jpg) no-repeat;
+              background-size: contain;
+            }
+            .tmall6 .top2 .item3{
+              background: url(../taobao/tmall5.jpg) no-repeat;
+              background-size: contain;
+            }
+            .tmall6 .top2 .item4{
+              background: url(../taobao/tmall6.jpg) no-repeat;
+              background-size: contain;
+            }
+
+
+            .feature8 .title .icon{
+              background: url(../taobao/icon2.png) no-repeat;
+              background-size: contain;
+            }
+            .feature8 .title .text{
+              color: rgb(255, 104, 19);
+              width: 1.953rem;
+            }
+            .feature8 .h-list{
+              height: 2.916rem;
+            }
+            .feature8 .top1 .item1{
+              background: url(../taobao/feature1.png) no-repeat;
+              background-size: contain;
+            }
+            .feature8 .top1 .item2{
+              background: url(../taobao/feature2.jpg) no-repeat;
+              background-size: contain;
+            }
+            .feature8 .top1 .item3{
+              background: url(../taobao/feature3.png) no-repeat;
+              background-size: contain;
+            }
+            .feature8 .top1 .item4{
+              background: url(../taobao/feature4.png) no-repeat;
+              background-size: contain;
+            }
+            .feature8 .top2 .item1{
+              background: url(../taobao/feature5.png) no-repeat;
+              background-size: contain;
+            }
+            .feature8 .top2 .item2{
+              background: url(../taobao/feature6.jpg) no-repeat;
+              background-size: contain;
+            }
+            .feature8 .top2 .item3{
+              background: url(../taobao/feature7.png) no-repeat;
+              background-size: contain;
+            }
+            .feature8 .top2 .item4{
+              background: url(../taobao/feature8.jpg) no-repeat;
+              background-size: contain;
+            }
+
+
+            .more-serve{
+              line-height: 0;
+              width: 10rem;
+              height: 0.953rem;
+              background-color: rgb(255, 255, 255);
+            }
+            .more-serve .left{
+              width: 4.266rem;
+              background: url(../taobao/icon3.png) no-repeat;
+              background-size: contain;
+            }
+            .more-serve .right{
+              line-height: 0.953rem;
+              text-align: right;
+              font-size: 25px;
+              color: rgb(102, 102, 102);
+              background-color: transparent;
+              margin-left: 3.125rem;
+              margin-right: 0.078rem;
+              width: 2.3rem;
+              height: 0.953rem;
+            }
+            .more-serve .right .icon-right{
+              font-size: 0.267rem;
+              color: #ff4400;
+              font-weight: bolder;
+            }
+
+
+            .banner2{
+              height: 2rem;
+              width: 100%;
+              background: url(../taobao/11.jpg) no-repeat;
+              background-size: contain;
+            }
+
+
+            .shop6{
+                line-height: 0;
+                width: 10rem;
+                height: 5.344rem;
+                background-color: rgb(255, 255, 255);
+                border-bottom-style: solid;
+                border-bottom-width: 1px;
+                border-bottom-color: rgb(213, 213, 213);
+                border-top-style: solid;
+                border-top-width: 1px;
+                border-top-color: rgb(213, 213, 213); 
+            }
+            .shop6 .title{
+              height: 0.969rem;
+                background-color: rgb(255, 255, 255);
+            }
+            .shop6 .title .left{
+              line-height: 0.969rem;
+              font-size: 31px;
+              color: rgb(34, 34, 34);
+              background-color: transparent;
+              margin-left: 0.188rem;
+              width: 4.656rem;
+              height: 0.969rem;
+            }
+            .shop6 .title .right{
+              line-height: 0.969rem;
+              text-align: right;
+              font-size: 27px;
+              color: rgb(102, 102, 102);
+              background-color: transparent;
+              width: 4.765rem;
+              height: 0.969rem;
+            }
+            .shop6 .title .right .icon-right{
+              font-size: 0.406rem;
+              height: 0.406rem;
+              width: 0.406rem;
+              background: #ff4400;
+              color: #fff;
+              vertical-align: -3px;
+              border-radius: 4px;
+            }
+            .shop6 .main{
+              width: 10rem;
+              height: 4.375rem;
+              margin-top: 0.156rem;
+            }
+            .shop6 .main .left,.shop6 .main .right{
+              margin-left: 0.188rem;
+            }
+            .shop6 .left .item1{
+              background: url(../taobao/shop1.jpg) no-repeat;
+              background-size: contain;
+            }
+            .shop6 .left .item2{
+              background: url(../taobao/shop2.jpg) no-repeat;
+              background-size: contain;
+            }
+            .shop6 .left .item3{
+              background: url(../taobao/shop3.jpg) no-repeat;
+              background-size: contain;
+            }
+            .shop6 .right .item1{
+              background: url(../taobao/shop4.jpg) no-repeat;
+              background-size: contain;
+              background-position: 50% 50%;
+            }
+            .shop6 .right .item2{
+              background: url(../taobao/shop5.jpg) no-repeat;
+              background-size: contain;
+            }
+            .shop6 .right .item3{
+              background: url(../taobao/shop6.jpg) no-repeat;
+              background-size: contain;
+            }
+            .shop6 .name{
+              line-height: 0.5rem;
+              font-size: 26px;
+              color: rgb(34, 34, 34);
+              background-color: transparent;
+              margin-top: 0.093rem;
+              margin-left: 0.031rem;
+              width: 4.719rem;
+              height: 0.5rem;
+            }
+
+
+            .guessTitle{
+              height: 1.469rem;
+              background: #eee;
+            }
+            .guessTitle .title{
+              height: 0.719rem;
+            }
+            .guessTitle .title .text{
+              color: #333;
+            }
+            .guessTitle .title .icon{
+              background: url(../taobao/like.png) no-repeat;
+              background-size: contain;
+            }
+            .guessTitle .subTitle{
+              line-height: 0.516rem;
+              text-align: center;
+              font-size: 24px;
+              color: rgb(120, 120, 120);
+              background-color: transparent;
+              margin-bottom: 0.078rem;
+              width: 10rem;
+              height: 0.516rem;
+            }
+            .guess-list{
+              background: #eee;
+            }
+            .guess-list .guessitem .item{
+                line-height: 0;  
+                margin-bottom: 8px;
+                width: 5rem;  
+            }
+            .guess-list .guessitem .item .inner{
+              margin-right: 4px;
+              background-color: rgb(255, 255, 255);
+            }
+            .item1 .pic{
+              background: url(../taobao/like1.jpg) no-repeat;
+              background-size: cover;
+            }
+            .item2 .pic{
+              background: url(../taobao/like2.jpg) no-repeat;
+              background-size: cover;
+            }
+            .item3 .pic{
+              background: url(../taobao/like3.jpg) no-repeat;
+              background-size: cover;
+            }
+            .item4 .pic{
+              background: url(../taobao/like4.jpg) no-repeat;
+              background-size: cover;
+            }
+            .pic{
+              width: 100%;
+              height: 4.625rem;
+            }
+            .info{
+              font-size: 24px;
+              height: 70px;
+              line-height: 1.5em;
+              color: rgb(102, 102, 102);
+              background-color: transparent;
+              margin: 0.188rem 0.313rem;
+              overflow: hidden;
+              display: -webkit-box;
+              -webkit-box-orient:vertical;
+              -webkit-line-clamp:2;
+
+            }
+            .Price{
+              font-size: 0.5rem;
+              color: #ff4400;
+              width: 4.625rem;
+              height: 0.875rem;
+              padding:0.188rem 0.313rem;
+            }
+
+
+            .pagebottom{
+                border-top: 1px solid #292c33;
+                background-image: url(../taobao/pagebottom.png);
+                background-repeat: no-repeat;
+                background-position: center 3.4375rem;
+                background-size: 4.25rem 1.125rem;
+                background-color: #4e525e;
+                padding: 0.5625rem 0.25rem; 
+            }
+
+            .pagebottom .buttons{
+              display: flex;
+              justify-content: space-between;
+            }
+            .pagebottom .buttons a{
+              display: block;
+              height: 0.9375rem;
+              line-height: 0.9375rem;
+              color: #c3c6ca;
+              border: 2px solid #42454d;
+              background-color: #555965;
+              padding: 0 0.46875rem;
+            }
+            .pagebottom .copyright{
+
+              margin-top: 0.5625rem;
+              height: 0.5625rem;
+              line-height: 0.5625rem;
+              padding-left: 3.03125rem;
+              background: url(../taobao/copyright.png)  no-repeat;
+              background-position:2.3125rem center ;
+              background-size: 0.53125rem 0.53125rem;
+              color: #c3c6ca;
+            }
+
+            footer{
+              box-sizing: content-box;
+              width: 100%;
+              padding-top: 4px;
+              height: 1rem;
+              display: flex;
+              justify-content: space-between;
+            }
+            [data-dpr="2"] footer{
+              padding-top: 8px;
+            }
+            footer a{
+              flex: 1;
+              height: 100%;
+              text-align: center;
+              color: #5D656B;
+            }
+            footer a span{
+              display: block;
+              font-size: 0.587rem;
+              background: #fff;
+            }
+
+            .f-l{
+              float: left;
+            }
+            .f-r{
+              float: right;
+            }
+
+            
+            .banner .pointList{
+
+            }
+            .banner .pointList{
+                right: 0px;
+                height: 0.28125rem;
+                position: absolute;
+                bottom: 0.25rem;
+                text-align: center;
+            }
+            .banner .pointList li{
+                display: block;
+                width: 0.25rem;
+                height: 0.25rem;
+                margin:0 0.0935rem;
+                background-size: 0.25rem 0.5rem;
+                background-position: 0px 0px;
+                background: url(../taobao/bannerpoint.png) no-repeat;
+            }
+
+            .banner{
+                position: relative;
+                width: 10rem;
+            }
+            #U{
+                position: relative;
+                width: 100%;
+                height: 100%;
+                transition: all 0.3s linear;
+            }
+            #U li{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top:0;
+                float: left;
+            }
+            #U li img{
+                width: 100%;
+                height: 100%;
+            }
