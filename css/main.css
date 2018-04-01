@@ -302,7 +302,7 @@ body{
           color: rgb(102,102,102);
           height: 0.688rem;
           line-height: 0.618rem;
-          font-size: 24px;
+          font-size: 0.33rem;
         }
 
         .infoList{
@@ -339,7 +339,7 @@ body{
               border: 1px solid rgb(216, 20, 33);
               border-radius: 0.125rem;
               color: rgb(216, 20, 33);
-              font-size: 28.125px;
+              font-size: 0.35rem;
               text-align: center;
               overflow: hidden;
               max-width: 2rem;
@@ -351,7 +351,7 @@ body{
               height: 0.5rem;
               line-height: 0.5rem;
               color: rgb(53, 53, 53);
-              font-size: 30.4688px;
+              font-size: 0.4rem;
               width: 6rem;
               flex: 1 1 0%;
         }
@@ -504,7 +504,7 @@ body{
             }
             .title .text{
               line-height: 0.844rem;
-              font-size: 28px;
+              font-size: 0.375rem;
               color: rgb(255, 53, 14);
               background-color: transparent;
               margin-left: 0.141rem;
@@ -544,7 +544,7 @@ body{
               background-size: contain;
             }
             .tmall6 .title .text{
-              font-size: 28px;
+              font-size: 0.375rem;
               color: rgb(209, 9, 9);
               width: 1.953rem;
             }
@@ -639,7 +639,7 @@ body{
             .more-serve .right{
               line-height: 0.953rem;
               text-align: right;
-              font-size: 25px;
+              font-size: 0.33rem;
               color: rgb(102, 102, 102);
               background-color: transparent;
               margin-left: 3.125rem;
@@ -680,7 +680,7 @@ body{
             }
             .shop6 .title .left{
               line-height: 0.969rem;
-              font-size: 31px;
+              font-size: 0.4rem;
               color: rgb(34, 34, 34);
               background-color: transparent;
               margin-left: 0.188rem;
@@ -690,7 +690,7 @@ body{
             .shop6 .title .right{
               line-height: 0.969rem;
               text-align: right;
-              font-size: 27px;
+              font-size: 0.375rem;
               color: rgb(102, 102, 102);
               background-color: transparent;
               width: 4.765rem;
@@ -740,7 +740,7 @@ body{
             }
             .shop6 .name{
               line-height: 0.5rem;
-              font-size: 26px;
+              font-size: 0.33rem;
               color: rgb(34, 34, 34);
               background-color: transparent;
               margin-top: 0.093rem;
@@ -767,7 +767,7 @@ body{
             .guessTitle .subTitle{
               line-height: 0.516rem;
               text-align: center;
-              font-size: 24px;
+              font-size: 0.33rem;
               color: rgb(120, 120, 120);
               background-color: transparent;
               margin-bottom: 0.078rem;
@@ -807,7 +807,7 @@ body{
               height: 4.625rem;
             }
             .info{
-              font-size: 24px;
+              font-size: 0.275rem;
               height: 70px;
               line-height: 1.5em;
               color: rgb(102, 102, 102);
@@ -820,7 +820,7 @@ body{
 
             }
             .Price{
-              font-size: 0.5rem;
+              font-size: 0.275rem;
               color: #ff4400;
               width: 4.625rem;
               height: 0.875rem;
